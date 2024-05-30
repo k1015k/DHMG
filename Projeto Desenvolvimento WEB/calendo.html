@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="imagex/png" href="./assets/icon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+  <!-- arquivos style -->
+  <link href="./styles/calendario.css" rel="stylesheet">
+
+  <title>Calendario</title>
+</head>
+
+<body>
+  <nav class="inicio">
+    <!-- <a href="index.html" class="inicio">
+      <img src="./assets/circle-left.svg" class="inicio">
+    </a> -->
+    <a class="inicio-link" href="index.html">Voltar ao início</a>
+  </nav>
+  <div id="container">
+      <div id="header">
+        <div id="monthDisplay"></div>
+
+        <div>
+          <button id="backButton">Mês anterior</button>
+          <button id="nextButton">Próximo mês</button>
+        </div>
+          
+      </div>
+
+      <div id="weekdays">
+        <div>Domingo</div>
+        <div>Segunda-feira</div>
+        <div>Terça-feira</div>
+        <div>Quarta-feira</div>
+        <div>Quinta-feira</div>
+        <div>Sexta-feira</div>
+        <div>Sábado</div>
+      </div>
+
+
+      <!-- div dinamic -->
+      <div id="calendar" ></div>
+
+   
+  </div>
+
+  <div id="newEventModal">
+    <h2>Novo Evento</h2>
+
+    <input id="eventTitleInput" placeholder="Escreva aqui."/>
+
+    <button id="saveButton"> Salvar</button>
+    <button id="cancelButton">Cancelar</button>
+  
+  </div>
+
+  <div id="editEventModal">
+    <h2>Editar Evento</h2>
+    <input id="editEventTitleInput" placeholder="Edite o título aqui."/>
+    <button id="updateButton">Atualizar</button>
+    <button id="cancelEditButton">Cancelar</button>
+  </div>
+
+  <div id="deleteEventModal">
+    <h2>Evento</h2>
+
+    <div id="eventText"></div><br>
+     
+     
+      </button>
+     
+    <button id="editButton">Editar</button>
+     <button id="deleteButton">Deletar</button>
+      <button id="closeButton">Fechar</button>
+   
+  </div>
+  <div id="eventText"></div><br>
+  <div id="modalBackDrop"></div>
+
+
+  <script src="./scripts/main.js"></script>
+  
+</body>
+</html>
